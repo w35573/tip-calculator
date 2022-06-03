@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heading {
+  color: hsl(186, 14%, 43%);
+  letter-spacing: 0.5em;
+  margin-bottom: 3.5em;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 50%;
+  padding: 1.75em;
+  border-radius: 1.2em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 3em;
+}
+
+/* bill container i.e., left side container */
+
+.bill-container {
+  color: hsl(186, 14%, 43%);
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+.bill p,
+.message {
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* */
+
+#error.visible {
+  color: rgb(231, 89, 89);
+}
+
+#people.red-border {
+  outline-color: rgb(231, 89, 89);
+}
+
+.select-tip p {
+  font-size: 0.9em;
+}
+
+/* how can i create this without manually? */
+.no-of-people {
+  height: 66.4px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(184, 14%, 56%);
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 0.5em;
+  font-size: 1em;
+  text-align: right;
+}
+
+input:active,
+input:focus {
+  outline-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.bill img,
+.no-of-people img {
+  transform: translate(1em, 2.1em);
+}
+
+.wtf {
+  transform: translateY(-1.5em);
+}
+
+.no-of-people {
+  margin-top: 1.5em;
+}
+
+.tip-element {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  text-align: center;
+  padding: 0.3em;
+  border-radius: 0.2em;
+  width: 31%;
+  font-size: 1.2em;
+  transition: all 0.2s ease-in-out;
+}
+
+.tip-element:hover,
+.reset:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+}
+
+.tip-line1,
+.tip-line2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8em;
+  margin-top: 0.8em;
+}
+
+#custom {
+  text-align: center;
+  padding: 0.3em;
+  border-radius: 0.2em;
+  width: 31%;
+  font-size: 1.2em;
+  color: hsl(186, 14%, 43%);
+  background-color: hsl(189, 41%, 97%);
+}
+
+/* tip container i.e., right side container */
+.tip-container {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 0.75em;
+  padding: 1.5em;
+  margin-left: 1.5em;
+}
+
+.tip {
+  padding-top: 0.7em;
+  color: hsl(189, 41%, 97%);
+  font-size: 0.8em;
+}
+
+.person {
+  color: hsl(184, 14%, 56%);
+  font-size: 0.7em;
+}
+
+.tip-amt {
+  margin-bottom: 1em;
+}
+
+.tip-amt,
+.total-amt {
+  padding-top: 0.5em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.cost {
+  color: hsl(172, 67%, 45%);
+  font-size: 2em;
+  padding: 0;
+  text-align: right;
+}
+
+.reset {
+  color: hsl(183, 100%, 15%);
+  text-transform: uppercase;
+  background-color: hsl(172, 67%, 45%, 0.1);
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  margin-top: 6.5em;
+  transition: all 0.3s ease-in-out;
+}
+
+.tip-element.active,
+.reset.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
